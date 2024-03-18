@@ -5,22 +5,22 @@ import { createTheme } from '@mui/material/styles';
 const basisGrotesquePro = localFont({
   src: [
     {
-      path: '../assets/fonts/BasisGrotesquePro-Bold.ttf',
+      path: './shared/assets/fonts/BasisGrotesquePro-Bold.ttf',
       weight: '700',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/BasisGrotesquePro-Medium.ttf',
+      path: './shared/assets/fonts/BasisGrotesquePro-Medium.ttf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/BasisGrotesquePro-Light.ttf',
+      path: './shared/assets/fonts/BasisGrotesquePro-Light.ttf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/BasisGrotesquePro-Regular.ttf',
+      path: './shared/assets/fonts/BasisGrotesquePro-Regular.ttf',
       weight: '300',
       style: 'normal'
     }

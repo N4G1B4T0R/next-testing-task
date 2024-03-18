@@ -2,6 +2,52 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+## [Demo](https://next-testing-task-a7kf.vercel.app/auth/login)
+
+Key Features:
+- 👑 Feature sliced design [link](https://feature-sliced.design/)
+- 📈 React 18 new features (useFormState)
+- 🔐 Next-auth v5 (Auth.js)
+- 🚀 Next.js 14 with server actions
+- 🔑 Credentials Provider
+- 🌐 OAuth Provider (Social login with Google & GitHub)
+- 🔒 Forgot password functionality
+- 🚪 Logout functionality
+- 🛡️ Protect API Routes
+- 🔑 Change password
+- ✅ Code-splitting, Cashing, Image-optimization, SE0
+
+### Prerequisites
+
+**Node version 18.7.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/N4G1B4T0R/next-testing-task.git
+```
+
+### Install packages
+
+```shell
+npm i
+```
+
+### Setup .env file
+
+
+```js
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+AUTH_SECRET=
+AUTH_URL="http://localhost:3000/api/auth"
+BASE_URL="https://auth-qa.qencode.com"
+```
+
 First, run the development server:
 
 ```bash
