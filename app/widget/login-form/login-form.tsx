@@ -49,7 +49,9 @@ export const LoginForm = () => {
       sx={{ width: '100%', maxWidth: '400px' }}
       justifyContent="center">
       <Grid container justifyContent="space-between">
-        <AuthButton name={AuthButtonEnum.Google}>Google</AuthButton>
+        <Box sx={{ mb: { xs: 2, md: 0 }, width: { xs: 'inherit', md: 'auto' }}}>
+          <AuthButton name={AuthButtonEnum.Google}>Google</AuthButton>
+        </Box>
         <AuthButton name={AuthButtonEnum.Github}>Github</AuthButton>
       </Grid>
 

@@ -16,7 +16,11 @@ export const AuthButton: FC<IProps> = memo(({ name, children }: IProps) => {
   };
 
   return (
-    <Button variant="outlined" color="secondary" sx={{ width: 182 }} onClick={() => _onClick(name)}>
+    <Button
+      variant="outlined"
+      color="secondary"
+      sx={{ width: { xs: "100%", md: 182 } }}
+      onClick={() => _onClick(name)}>
       <Image src={`/${name}-logo.svg`} width={18} height={18} alt={`${name}-logo`} />
       <Box component="span" ml={'10px'}>
         {children}

@@ -27,17 +27,20 @@ const basisGrotesquePro = localFont({
   ]
 });
 
+const primaryColor = '#316FEA';
+const secondaryColor = '#D3D8DC';
+
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#316FEA',
-      dark: '#316FEA',
-      main: '#316FEA'
+      light: primaryColor,
+      dark: primaryColor,
+      main: primaryColor
     },
     secondary: {
-      light: '#D3D8DC',
-      dark: '#D3D8DC',
-      main: '#D3D8DC'
+      light: secondaryColor,
+      dark: secondaryColor,
+      main: secondaryColor
     }
   },
   shape: {
@@ -61,9 +64,9 @@ const theme = createTheme({
           fontWeight: 500,
           textTransform: 'initial',
           ...(ownerState.color === 'secondary' && {
-            borderColor: "#D3D8DC",
+            borderColor: secondaryColor,
             color: '#060E1E',
-            fontSize: 14,
+            fontSize: 14
           })
         })
       }
