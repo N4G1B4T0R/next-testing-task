@@ -35,17 +35,22 @@ npm i
 
 ### Setup .env file
 
+Generate AUTH_SECRET please use this command
+
+```bash
+openssl rand -base64 32
+```
+if you want to check `GITHUB_CLIENT_ID/GITHUB_CLIENT_SECRET` and` GOOGLE_CLIENT_ID/GOOGLE_CLIENT_SECRET` and credentials
+Please guide this [article](https://mattermost.com/blog/add-google-and-github-login-to-next-js-app-with-nextauth/) to get auth with google and github
 
 ```js
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
-
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-
-AUTH_SECRET=
-AUTH_URL="http://localhost:3000/api/auth"
-BASE_URL="https://auth-qa.qencode.com"
+  GITHUB_CLIENT_ID =
+  GITHUB_CLIENT_SECRET =
+  GOOGLE_CLIENT_ID =
+  GOOGLE_CLIENT_SECRET =
+  AUTH_SECRET =
+  AUTH_URL = 'http://localhost:3000/api/auth'
+  BASE_URL = 'https://auth-qa.qencode.com'
 ```
 
 First, run the development server:
