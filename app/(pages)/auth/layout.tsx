@@ -1,5 +1,6 @@
 import { Box, Container, Grid } from '@mui/material';
 import Image from 'next/image';
+import { Suspense } from 'react'
 export default function AuthLayout({
   children
 }: Readonly<{
@@ -19,9 +20,11 @@ export default function AuthLayout({
               <Image src="/logo.svg" width={178} height={32} alt="logo" />
             </Box>
           </Grid>
-          <Grid container justifyItems="center" sx={{ maxWidth: '400px' }} justifyContent="center">
-            {children}
-          </Grid>
+          <Suspense>
+            <Grid container justifyItems="center" sx={{ maxWidth: '400px' }} justifyContent="center">
+              {children}
+            </Grid>
+          </Suspense>
         </Grid>
       </Box>
     </Container>
