@@ -26,7 +26,9 @@ Key Features:
 ```shell
 git clone https://github.com/N4G1B4T0R/next-testing-task.git
 ```
-
+```shell
+cd next-testing-task
+```
 ### Install packages
 
 ```shell
